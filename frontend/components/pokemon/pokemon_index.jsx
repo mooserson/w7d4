@@ -4,7 +4,7 @@ import PokemonIndexItem from './pokemon_index_item';
 const PokemonIndex = ({pokemon, children}) => {
   return(
     <section className="pokedex">
-      <ul>
+      <ul className="sidebar">
           {
             pokemon.map(poke => (
               <PokemonIndexItem key={poke.id} pokemon={poke} />

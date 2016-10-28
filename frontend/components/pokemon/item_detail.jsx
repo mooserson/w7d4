@@ -2,12 +2,15 @@ import React from 'react';
 import {withRouter} from 'react-router';
 
 const ItemDetail = props => {
-  return (
-    <div>
-      {props.itemDetail.name}
-      {props.itemDetail.happiness}
-    </div>
-  );
+  if (props.itemDetail) {
+    return (
+      <div>
+        {props.itemDetail.name}
+        {props.itemDetail.happiness}
+      </div>
+    );
+  }
+  return(<div></div>);
 };
 
 export default withRouter(ItemDetail);

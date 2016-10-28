@@ -3,15 +3,15 @@ import {withRouter} from 'react-router';
 import Item from './item';
 
 const PokemonDetail = props => {
-  var tempp = [];
-  if (props.pokemonDetail.items){
-    tempp = props.pokemonDetail.items.map((item) => (
-      <img key={item.id} src={item.image_url} />
-    ));
-  }
+  // var tempp = [];
+  // if (props.pokemonDetail.items){
+  //   tempp = props.pokemonDetail.items.map((item) => (
+  //     <img key={item.id} src={item.image_url} />
+  //   ));
+  // }
 
   return (
-    <div>
+    <div className="pokemon-detail">
       {props.pokemonDetail.name}
 
       <section className="items">

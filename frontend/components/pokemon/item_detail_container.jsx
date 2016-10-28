@@ -2,8 +2,9 @@ import {connect} from 'react-redux';
 import ItemDetail from './item_detail';
 
 const selectPokemonItem = (state, itemId) => {
+
   for (var i = 0; i < state.pokemonDetail.items.length; i++) {
-    if (state.pokemonDetail.items[i].id === itemId) {
+    if (state.pokemonDetail.items[i].id === parseInt(itemId)) {
       return state.pokemonDetail.items[i];
     }
   }
